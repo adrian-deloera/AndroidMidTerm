@@ -8,20 +8,85 @@
         tools:context=".MainActivity">
 
     <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" android:textSize="24sp" android:id="@+id/eventTitle"/>
+        android:id="@+id/staffResponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.447" />
+
     <Button
-            android:text="Button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/button" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp"/>
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="COCOGO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/sizeEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Size"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/staffResponse"
+        app:layout_constraintStart_toStartOf="@+id/staffResponse"
+        app:layout_constraintTop_toBottomOf="@+id/staffResponse" />
+
+    <EditText
+        android:id="@+id/eafEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="EAF"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/sizeEntry"
+        app:layout_constraintStart_toStartOf="@+id/sizeEntry"
+        app:layout_constraintTop_toBottomOf="@+id/sizeEntry" />
+
+    <TextView
+        android:id="@+id/timeResponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="MO"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/staffResponse"
+        app:layout_constraintEnd_toEndOf="@+id/staffResponse"
+        app:layout_constraintStart_toStartOf="@+id/staffResponse" />
+
+    <TextView
+        android:id="@+id/effortResponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="CO"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/timeResponse"
+        app:layout_constraintEnd_toEndOf="@+id/timeResponse"
+        app:layout_constraintStart_toStartOf="@+id/timeResponse" />
+
+    <TextView
+        android:id="@+id/modeResponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="CO"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/effortResponse"
+        app:layout_constraintEnd_toEndOf="@+id/effortResponse"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/effortResponse" />
 
 </android.support.constraint.ConstraintLayout>
